@@ -1,0 +1,61 @@
+THIRD-PARTY NOTICES
+===================
+
+This file travels with every package built from this repository. See
+installer/package.ps1, which refuses to build a package without it.
+
+
+Spine C++ Runtime
+-----------------
+
+  Location in this repository:  render/vendor/spine-cpp/
+  Shipped in a package as:      SPINE-LICENSE.txt (beside this file)
+
+  Copyright (c) 2013-2025, Esoteric Software LLC
+  Licensed under the Spine Runtimes License Agreement.
+  Full text:  render/vendor/spine-cpp/LICENSE
+
+  Upstream:  EsotericSoftware/spine-runtimes
+             branch 4.2
+             commit e7dc1435fa4a0083ab431f1b28e083c14a1f5c68
+             path   spine-cpp/spine-cpp
+             (also recorded in render/vendor/spine-cpp/PROVENANCE.txt)
+
+  The vendored copy is unmodified, comments and copyright headers included.
+
+  Two conditions attach to this code and travel with it:
+
+    1. Each user of a product that integrates the Spine Runtimes must obtain
+       their own Spine Editor license.
+
+    2. Redistribution of such a product, in any form, must include the Spine
+       Runtimes License and copyright notice.
+
+  These apply to this repository, to any binary built from it, and to any
+  further copy either one is passed on to. Both overlay.exe and render_still.exe
+  link the runtime, so both are such a product.
+
+
+LINE Seed KR
+------------
+
+  Location in this repository:  assets/LINESeedKR-Bd.ttf
+  Shipped in a package as:      assets/LINESeedKR-Bd.ttf + assets/OFL.txt
+
+  Copyright (c) LY Corporation.
+  Licensed under the SIL Open Font License, Version 1.1.
+  Full text:  assets/OFL.txt
+
+  The font declares OFL 1.1 in its own `name` table, with the OFL URL, and the
+  copy here is byte-identical to LY Corporation's own download from seed.line.me
+  (SHA256 DF6D817F..., verified 2026-09-08). The OFL requires the licence to
+  travel with the font; package.ps1 refuses to ship the .ttf without OFL.txt.
+
+
+Character art and scene assets
+------------------------------
+
+  Not third-party notices, but recorded here because the distinction matters:
+  the room and character artwork this project draws is not redistributed by it.
+  A package contains the Spine skeleton exports and the still images baked from
+  them at install time. See docs/assets.md for what is shipped and what is not.
